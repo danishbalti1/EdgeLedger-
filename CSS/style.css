@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+/* Navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+#navbar ul li a {
+  color: white;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+/* Showcase */
+#showcase {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../img/showcase.jpg");
+  color: white;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+#showcase h1 {
+  font-size: 4rem;
+}
+#showcase p {
+  font-size: 1.7rem;
+  letter-spacing: 1.8px;
+  text-align: justify;
+}
+#showcase .btn {
+  padding: 10px 20px;
+  background: #93cb52;
+  border-radius: 5px;
+  outline: nones;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+#showcase .btn:hover {
+  opacity: 0.8;
+}
+/* What SEction*/
+#what {
+  background: #f1f1f1;
+}
+#what .container {
+  padding: 0 2rem;
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+}
+#what .container .m-heading {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.3rem;
+}
+.container .items {
+  display: flex;
+  padding: 1rem;
+}
+.items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+.items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.items .item p {
+  text-align: justify;
+}
+/* Who we are */
+#who {
+  display: flex;
+  background: #333;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .img {
+  background: url("../img/people.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#who .info-who {
+  padding: 2rem;
+  color: white;
+}
+#who .info-who h1 {
+  font-size: 1.8rem;
+}
+#who .info-who p {
+  font-size: 1rem;
+  letter-spacing: 1.4px;
+}
+#who .info-who ul li {
+  list-style-type: none;
+}
+#who .info-who h3 {
+  padding-bottom: 5px;
+}
+#who .info-who li {
+  line-height: 3rem;
+  border-bottom: 1px solid #555;
+}
+
+/* Clients section */
+#clients h2 {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.items img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+#clients .items {
+  display: flex;
+  justify-content: center;
+}
+/* Section Contact */
+#contact {
+  display: flex;
+}
+#contact .map,
+#contact .contact-form {
+  flex: 1;
+}
+
+.contact-form {
+  background-color: #93cb52;
+  padding: 2rem;
+  color: white;
+}
+.contact-form h2 {
+  font-size: 2.4rem;
+}
+.contact-form .form-group {
+  padding: 10px;
+}
+.contact-form input {
+  padding: 0.7rem;
+  width: 100%;
+}
+.contact-form label {
+  display: block;
+}
+.contact-form textarea {
+  padding: 0.7rem;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+.contact-form .btn {
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #555;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+.contact-form .btn:hover {
+  background: #93cb52;
+}
+#main-fotter {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 9px;
+  height: 8vh;
+}
+#main-fotter span {
+  text-align: center;
+}

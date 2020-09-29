@@ -1,0 +1,54 @@
+/* Align items to left */
+#what .items {
+  flex-direction: column;
+  padding: 1rem;
+}
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+/* postionong icon */
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+/* Smart Phones */
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #showcase h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #showcase p {
+    font-size: 1.1rem;
+  }
+  #who .img {
+    display: none;
+  }
+  #clients .m-heading {
+    font-size: 2.4rem;
+    padding-top: 1rem;
+  }
+  #clients .items img {
+    width: 80%;
+    padding-bottom: 2rem;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+}
